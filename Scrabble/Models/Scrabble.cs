@@ -14,6 +14,7 @@ namespace Scrabble.Models
       public ScrabbleWord (string newUserWord)
       {
         _userWord = newUserWord;
+        _totalValue = this.SetWordValue(newUserWord);
       }
 
       public int GetTotalValue()
@@ -36,7 +37,7 @@ namespace Scrabble.Models
         return _scoreValues[letter];
       }
 
-      public void SetWordValue(string word)
+      public int SetWordValue(string word)
       {
         int total = 0;
         char[] splitWord = word.ToCharArray();
@@ -44,7 +45,7 @@ namespace Scrabble.Models
         {
           total += GetDictionaryValue(letter);
         }
-        _totalValue = total;
+        return total;
       }
 
     }
