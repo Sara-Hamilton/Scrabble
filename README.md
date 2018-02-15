@@ -1,37 +1,93 @@
-# _{Application Name}_
+# _Scrabble_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _.Net MVC app that returns the scrabble score value for a word, 2-15-18_
 
-#### By _**{List of contributors}**_
+#### By _**Ian Goodrich and Sara Hamilton**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_.Net MVC app that returns the scrabble score value for a word_
+
+#### _Scrabble_
+* User inputs a word.
+* Scrabble score value for the word is returned.
+* Values for each letter
+        A, E, I, O, U, L, N, R, S, T       1
+        D, G                               2
+        B, C, M, P                         3
+        F, H, V, W, Y                      4
+        K                                  5
+        J, X                               8
+        Q, Z                               10
+
+### Specifications
+
+* Take in a word and return a value.
+  * sample input : "word"
+  * sample output : 8
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone this GitHub repository_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+```
+git clone https://github.com/Sara-Hamilton/Scrabble.git
+```
+
+* _Install the .NET Framework_
+
+  .NET Core 1.1 SDK (Software Development Kit)
+
+  .NET runtime.
+
+  See https://www.learnhowtoprogram.com/c/getting-started-with-c/installing-c for instructions and links.
+
+* _Run the program_
+  1. In the command line, cd into the project folder.
+  2. In the command line, type dotnet restore. Enter.  It make take a few minutes to complete this process.
+  3. In the command line, type dotnet build. Enter. Any errror messages will be displayed in red.  Errors will need to be corrected before the app can be run. After correcting errors and saving changes, type dotnet build again.  When message says Build succeeded in green, proceed to the next step.
+  4. In the command line, type dotnet run. Enter.
+
+* _View program on web browser at port localhost:5000/_
+
+* _Follow the prompts._
+
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_There are no known bugs._
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_To suggest changes, submit a pull request in the GitHub repository._
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+* HTML
+* Bootstrap
+* C#
+* .Net Core 1.1
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*MIT License*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2018 **_Sara Hamilton and Ian Goodrich_**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
