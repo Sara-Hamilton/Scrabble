@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Scrabble.Models;
 using System;
+using System.Text.RegularExpressions;
 
 namespace Scrabble.Controllers
 {
@@ -22,9 +23,6 @@ namespace Scrabble.Controllers
         ScrabbleWord newScrabbleWord = new ScrabbleWord(userWord);
         return View("Index", newScrabbleWord);
       }
-
-
-
 
     }
 }
