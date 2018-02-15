@@ -1,3 +1,18 @@
 @{
   Layout = "_Layout";
 }
+<div class="formContainer">
+  <label for="">Enter Your Word Here</label>
+  <form class="" action="/" method="post">
+      <input type="text" name="userWord" value="">
+      <br>
+      <button type="submit" class="btn btn-primary" name="button">Submit</button>
+  </form>
+</div>
+@if (@Model.GetUserWord() != "")
+{
+<div class="resultContainer">
+  <h2>Your word was @Model.GetUserWord()</h2>
+  <h2>It has a Scrabble value of @Model.GetTotalValue() points</h2>
+</div>
+}

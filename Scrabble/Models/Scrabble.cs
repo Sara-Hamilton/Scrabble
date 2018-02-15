@@ -34,7 +34,7 @@ namespace Scrabble.Models
 
       public int GetDictionaryValue(char letter)
       {
-        return _scoreValues[letter];
+        return _scoreValues[char.ToLower(letter)];
       }
 
       public int SetWordValue(string word)
