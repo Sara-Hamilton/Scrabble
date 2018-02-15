@@ -1,0 +1,4 @@
+/Users/Guest/Desktop/Scrabble.Solution/Scrabble.Tests/bin/Debug/netcoreapp1.1/TEMPLATE.deps.json
+/Users/Guest/Desktop/Scrabble.Solution/Scrabble.Tests/bin/Debug/netcoreapp1.1/TEMPLATE.runtimeconfig.json
+/Users/Guest/Desktop/Scrabble.Solution/Scrabble.Tests/bin/Debug/netcoreapp1.1/TEMPLATE.runtimeconfig.dev.json
+/Users/Guest/Desktop/Scrabble.Solution/Scrabble.Tests/obj/Debug/netcoreapp1.1/TEMPLATE.AssemblyInfo.cs

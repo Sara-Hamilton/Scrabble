@@ -10624,16 +10624,16 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Guest/Desktop/Scrabble.Solution/Scrabble.Tests/TEMPLATE.csproj",
-      "projectName": "TEMPLATE",
-      "projectPath": "/Users/Guest/Desktop/Scrabble.Solution/Scrabble.Tests/TEMPLATE.csproj",
+      "projectUniqueName": "/Users/Guest/Desktop/Scrabble.Solution/Scrabble.Tests/Scrabble.Tests.csproj",
+      "projectName": "Scrabble.Tests",
+      "projectPath": "/Users/Guest/Desktop/Scrabble.Solution/Scrabble.Tests/Scrabble.Tests.csproj",
       "outputPath": "/Users/Guest/Desktop/Scrabble.Solution/Scrabble.Tests/obj/",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
       "files": {
-        "lib/netcoreapp1.1/TEMPLATE.dll": "/Users/Guest/Desktop/Scrabble.Solution/Scrabble.Tests/bin/placeholder/netcoreapp1.1/TEMPLATE.dll"
+        "lib/netcoreapp1.1/Scrabble.Tests.dll": "/Users/Guest/Desktop/Scrabble.Solution/Scrabble.Tests/bin/placeholder/netcoreapp1.1/Scrabble.Tests.dll"
       },
       "frameworks": {
         "netcoreapp1.1": {
