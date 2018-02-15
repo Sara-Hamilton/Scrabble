@@ -42,7 +42,7 @@ namespace Scrabble.Tests
       //arrange
       ScrabbleWord newScrabbleWord = new ScrabbleWord("word");
       //action
-      int resultNumber = newScrabbleWord.GetDictionaryValue("w");
+      int resultNumber = newScrabbleWord.GetDictionaryValue('w');
       //assert
       Assert.AreEqual(5, resultNumber);
     }
@@ -54,9 +54,32 @@ namespace Scrabble.Tests
       //arrange
       ScrabbleWord newScrabbleWord = new ScrabbleWord("word");
       //action
-      int resultNumber = newScrabbleWord.GetDictionaryValue("w");
+      int resultNumber = newScrabbleWord.GetDictionaryValue('w');
       //assert
       Assert.AreEqual(4, resultNumber);
     }
+
+    [TestMethod]
+    public void SetWordValue_ReturnTotalValue_Red()
+    {
+      //arrange
+      ScrabbleWord newScrabbleWord = new ScrabbleWord("word");
+      //action
+      newScrabbleWord.SetWordValue("word");
+      //assert
+      Assert.AreEqual(9, newScrabbleWord.GetTotalValue());
+    }
+
+    [TestMethod]
+    public void SetWordValue_ReturnTotalValue_Green()
+    {
+      //arrange
+      ScrabbleWord newScrabbleWord = new ScrabbleWord("word");
+      //action
+      newScrabbleWord.SetWordValue("word");
+      //assert
+      Assert.AreEqual(8, newScrabbleWord.GetTotalValue());
+    }
+
   }
 }
