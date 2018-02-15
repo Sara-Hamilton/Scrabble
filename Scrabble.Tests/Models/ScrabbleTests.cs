@@ -35,5 +35,28 @@ namespace Scrabble.Tests
       Assert.AreEqual("word", resultWord);
       Assert.AreEqual(8, resultNumber);
     }
+
+    [TestMethod]
+    public void GetDictionaryValue_ReturnKeyValue_Red()
+    {
+      //arrange
+      ScrabbleWord newScrabbleWord = new ScrabbleWord("word");
+      //action
+      int resultNumber = newScrabbleWord.GetDictionaryValue("w");
+      //assert
+      Assert.AreEqual(5, resultNumber);
+    }
+
+
+    [TestMethod]
+    public void GetDictionaryValue_ReturnKeyValue_Green()
+    {
+      //arrange
+      ScrabbleWord newScrabbleWord = new ScrabbleWord("word");
+      //action
+      int resultNumber = newScrabbleWord.GetDictionaryValue("w");
+      //assert
+      Assert.AreEqual(4, resultNumber);
+    }
   }
 }

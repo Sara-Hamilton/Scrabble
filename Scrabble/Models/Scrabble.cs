@@ -31,7 +31,10 @@ namespace Scrabble.Models
         _totalValue = newTotalValue;
       }
 
-      
+      public int GetDictionaryValue(string letter)
+      {
+        return _scoreValues[letter];
+      }
 
     }
 
